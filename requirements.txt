@@ -1,0 +1,8 @@
+py-cord[voice]>=2.6.0
+python-dotenv>=1.0.0
+groq>=0.11.0
+ollama>=0.3.0
+openai-whisper>=20231117
+gTTS>=2.5.0
+yt-dlp>=2024.1.1
+aiohttp>=3.9.0
