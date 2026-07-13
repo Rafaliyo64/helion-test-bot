@@ -46,6 +46,7 @@ import voice
 import music
 import ai_backend
 import youtube_announcer
+import tiktok
 
 load_dotenv()
 
@@ -354,6 +355,7 @@ async def run_server_scan(guild: discord.Guild, requested_by: discord.Member) ->
 async def on_ready():
     print(f"✅ Conectado como {bot.user} (ID: {bot.user.id})")
     bot.loop.create_task(youtube_announcer.start_loop(bot))
+    bot.loop.create_task(tiktok.start_loop(bot))
 
 
 @bot.event
